@@ -1,0 +1,6 @@
+framework module Pods_AmplitudeTracker {
+  umbrella header "Pods-AmplitudeTracker-umbrella.h"
+
+  export *
+  module * { export * }
+}

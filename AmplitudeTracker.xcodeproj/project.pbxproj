@@ -7,14 +7,32 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		133D5A1DBF906E17F8911141 /* Pods_AmplitudeTracker.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3FCAB7CDB91F72E0C408509A /* Pods_AmplitudeTracker.framework */; };
 		F774FAE71F844F3600AFAADF /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774FAE61F844F3600AFAADF /* AppDelegate.swift */; };
 		F774FAE91F844F3600AFAADF /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774FAE81F844F3600AFAADF /* ViewController.swift */; };
 		F774FAEC1F844F3600AFAADF /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F774FAEA1F844F3600AFAADF /* Main.storyboard */; };
 		F774FAEE1F844F3600AFAADF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F774FAED1F844F3600AFAADF /* Assets.xcassets */; };
 		F774FAF11F844F3600AFAADF /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F774FAEF1F844F3600AFAADF /* LaunchScreen.storyboard */; };
+		F774FB011F844FA700AFAADF /* Conductor.swift in Sources */ = {isa = PBXBuildFile; fileRef = F774FB001F844FA700AFAADF /* Conductor.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F774FAFF1F844F8400AFAADF /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		3FCAB7CDB91F72E0C408509A /* Pods_AmplitudeTracker.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AmplitudeTracker.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		76998D21FFC0F20EF14ECE0D /* Pods-AmplitudeTracker.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplitudeTracker.release.xcconfig"; path = "Pods/Target Support Files/Pods-AmplitudeTracker/Pods-AmplitudeTracker.release.xcconfig"; sourceTree = "<group>"; };
+		BCC6E938CAB287F7A36C5D5B /* Pods-AmplitudeTracker.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AmplitudeTracker.debug.xcconfig"; path = "Pods/Target Support Files/Pods-AmplitudeTracker/Pods-AmplitudeTracker.debug.xcconfig"; sourceTree = "<group>"; };
 		F774FAE31F844F3600AFAADF /* AmplitudeTracker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AmplitudeTracker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F774FAE61F844F3600AFAADF /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F774FAE81F844F3600AFAADF /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +40,7 @@
 		F774FAED1F844F3600AFAADF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F774FAF01F844F3600AFAADF /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F774FAF21F844F3600AFAADF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F774FB001F844FA700AFAADF /* Conductor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Conductor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +48,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				133D5A1DBF906E17F8911141 /* Pods_AmplitudeTracker.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1EF02E538D17155A48CCB22D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3FCAB7CDB91F72E0C408509A /* Pods_AmplitudeTracker.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		A270AAD0C79A529274C14B7E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BCC6E938CAB287F7A36C5D5B /* Pods-AmplitudeTracker.debug.xcconfig */,
+				76998D21FFC0F20EF14ECE0D /* Pods-AmplitudeTracker.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		F774FADA1F844F3600AFAADF = {
 			isa = PBXGroup;
 			children = (
 				F774FAE51F844F3600AFAADF /* AmplitudeTracker */,
 				F774FAE41F844F3600AFAADF /* Products */,
+				1EF02E538D17155A48CCB22D /* Frameworks */,
+				A270AAD0C79A529274C14B7E /* Pods */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +93,7 @@
 		F774FAE51F844F3600AFAADF /* AmplitudeTracker */ = {
 			isa = PBXGroup;
 			children = (
+				F774FB001F844FA700AFAADF /* Conductor.swift */,
 				F774FAE61F844F3600AFAADF /* AppDelegate.swift */,
 				F774FAE81F844F3600AFAADF /* ViewController.swift */,
 				F774FAEA1F844F3600AFAADF /* Main.storyboard */,
@@ -71,9 +111,13 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = F774FAF51F844F3600AFAADF /* Build configuration list for PBXNativeTarget "AmplitudeTracker" */;
 			buildPhases = (
+				0430DE741996FFFAAAF3D8F6 /* [CP] Check Pods Manifest.lock */,
 				F774FADF1F844F3600AFAADF /* Sources */,
 				F774FAE01F844F3600AFAADF /* Frameworks */,
 				F774FAE11F844F3600AFAADF /* Resources */,
+				F774FAFF1F844F8400AFAADF /* Embed Frameworks */,
+				CE4B255578AFEB249B731FCF /* [CP] Embed Pods Frameworks */,
+				412711C4DDE4B948FD1C6A86 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,12 +175,61 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0430DE741996FFFAAAF3D8F6 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		412711C4DDE4B948FD1C6A86 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmplitudeTracker/Pods-AmplitudeTracker-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CE4B255578AFEB249B731FCF /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-AmplitudeTracker/Pods-AmplitudeTracker-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		F774FADF1F844F3600AFAADF /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				F774FAE91F844F3600AFAADF /* ViewController.swift in Sources */,
+				F774FB011F844FA700AFAADF /* Conductor.swift in Sources */,
 				F774FAE71F844F3600AFAADF /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -272,10 +365,13 @@
 		};
 		F774FAF61F844F3600AFAADF /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BCC6E938CAB287F7A36C5D5B /* Pods-AmplitudeTracker.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZRGG2W4BA;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AmplitudeTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oogafish.AmplitudeTracker;
@@ -287,10 +383,13 @@
 		};
 		F774FAF71F844F3600AFAADF /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 76998D21FFC0F20EF14ECE0D /* Pods-AmplitudeTracker.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = JZRGG2W4BA;
+				FRAMEWORK_SEARCH_PATHS = "$(inherited)";
 				INFOPLIST_FILE = AmplitudeTracker/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.oogafish.AmplitudeTracker;

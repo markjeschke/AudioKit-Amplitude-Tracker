@@ -9,17 +9,17 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    var conductor = Conductor.sharedInstance
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view, typically from a nib.
+        
+        Timer.scheduledTimer(withTimeInterval: 0.01, repeats: true) { [unowned self] (timer) in
+            print(self.conductor.tracker.amplitude)
+        }
+            
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 
