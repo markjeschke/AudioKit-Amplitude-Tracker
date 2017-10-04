@@ -31,32 +31,30 @@ class Conductor {
         // Allow audio to play while the iOS device is muted.
         AKSettings.playbackWhileMuted = true
         
-        /// Set whether to DefaultToSpeaker when audio input is enabled
-        AKSettings.defaultToSpeaker = false
-        
         // Capture mic input
         mic = AKMicrophone()
         
-        // Pass mic output into the tracker
+        // Pull mic output into the tracker node.
         tracker = AKAmplitudeTracker(mic)
         
-        // Pass the tracker output into the delay effect
+        // Pull the tracker output into the delay effect node.
         delay = AKDelay(tracker)
         delay.time = 2.0
         delay.feedback = 0.1
         delay.dryWetMix = 0.5
         
-        // Pass the delay output into the reverb effect
+        // Pull the delay output into the reverb effect node.
         reverb = AKCostelloReverb(delay)
         reverb.presetShortTailCostelloReverb()
         
-        // Mix the amount of reverb to the delay output
+        // Mix the amount of reverb to the delay output node.
         reverbAmountMixer = AKDryWetMixer(delay, reverb, balance: 0.8)
         
         // Assign the reverbAmountMixer output to be the final audio output
         AudioKit.output = reverbAmountMixer
         
         // Start the AudioKit engine
+        // This is in its own method so that the audio engine will start and stop via the AppDelegate's current state.
         startAudioEngine()
         
     }
