@@ -1,4 +1,4 @@
-# AudioKit Amplitude Tracker Demo
+# AudioKit Amplitude Tracker
 
 This is a Swift project that demonstrates the following:
 
@@ -7,7 +7,7 @@ This is a Swift project that demonstrates the following:
 
 ## Installation
 
-This app was created using Swift 4 and Xcode 9. It utilizes the [AudioKit](https://github.com/AudioKit/AudioKit) open-source library for its audio processing. In order to import the AudioKit framework via [CocoaPods](https://cocoapods.org/)
+This app was created using Swift 4 and Xcode 9. It utilizes the [AudioKit](https://github.com/AudioKit/AudioKit) open-source library for its audio processing. In order to import the AudioKit framework via [CocoaPods](https://cocoapods.org/):
 
 1. Run `pod update` in the command line.
-2. Launch the `AmplitudeTracker.xcworkspace`–not the `AmplitudeTracker.xcodeproj`
+2. Launch the `AmplitudeTracker.xcworkspace` – _not_ the `AmplitudeTracker.xcodeproj`
